@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    .
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+<div class="countdown-container">
+    <div class="countdown-el days-c">
+        <p class="big-text" id="days">0</p>
+        <span>days</span>
+    </div>
+    <div class="countdown-el hours-c">
+        <p class="big-text" id="hours">0</p>
+        <span>hours</span>
+    </div>
+    <div class="countdown-el mins-c">
+        <p class="big-text" id="mins">0</p>
+        <span>mins</span>
+    </div>
+    <div class="countdown-el seconds-c">
+        <p class="big-text" id="seconds">0</p>
+        <span>seconds</span>
+    </div>
+</div>
+<div class="button">
+    <button id="btn" class="btn">Click me!</button>
+    <div class="bg-music">
+        <audio id="myMusic" autoplay loop="">
+            <source src="" type="audio/mpeg">
+        </audio>
+        <button class="btn2" id="btn2">
+            <i class="far fa-play-circle"></i>
+            <i class="far fa-stop-circle"></i>
+        </button>
+    </div>
+    <button class="watch btn" id="watch" data-ahoy="kinoplayertop">Смотреть этот фильм онлайн</button>
+    <!--    <div class="loader-box">-->
+    <!--        <span class="loader" id="loader"><i class="fas fa-redo-alt"></i></span>-->
+    <!--    </div>-->
+</div>
+<div class="container">
+    <div class="row">
+        <div class="waiting" id="waiting">
+            <p class="text-waiting" id="text-waiting">
+                <span class="highlight">Помощники Санты</span> ищут фильм для тебя
+                <!--                <span class="dot" id="dot">...</span>-->
+            </p>
+            <!--            <span class="loader" id="loader"><i class="fas fa-redo-alt"></i></span>-->
+            <!--            <span class="loader" id="loader"><i class="fas fa-gifts"></i></span>-->
+            <span class="loader" id="loader"><i class="fas fa-gift"></i></span>
+            <!--            <div class="loader-box">-->
+            <!--                <span class="loader" id="loader"><i class="fas fa-redo-alt"></i></span>-->
+            <!--            </div>-->
+        </div>
+
+<!--        <div class="online-movie" id="online-movie">-->
+<!--        </div>-->
+        <div class="random-movie" id="random-movie">
+            <div class="title-img">
+                <div class="big-title">
+                    <h2 class="title" id="title"></h2>
+                    <span class="year" id="year"></span>
+                </div>
+                <div class="image" id="img">
+                    <div class="box-myFrame">
+                        <iframe id="myFrame" class="my-Frame" width="500" height="315" src="" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                    </div>
+
+                    <div class="cast">
+                        <p class="title-starring">В главных ролях: </p>
+                        <p class="starring" id="starring"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="description">
+                <div class="rate">
+                    <p class="imdb-title">IMDb:</p>
+                    <span class="imdb" id="rate"></span>
+                </div>
+                <p class="desc" id="desc"></p>
+                <button class="more" id="more">Читать далее</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="movie" id="movie">
+    <div id="kinoplayertop" data-kinopoisk="" class="cinema"></div>
+    <script src="//kinoplayer.top/top.js"></script>
+</div>
+<script src="js/parser.js" defer></script>
+<script src="js/main.min.js" defer></script>
+</body>
+</html>
